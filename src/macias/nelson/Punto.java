@@ -1,11 +1,11 @@
 package macias.nelson;
 
-public class Puntos {
+public class Punto {
 
     double x;
     double y;
 
-    public Puntos(double x, double y) {
+    public Punto(double x, double y) {
         this.x = x;
         this.y = y;
     }
@@ -26,7 +26,7 @@ public class Puntos {
         this.y = y;
     }
 
-    public double DistanciaPuntos(Puntos parametros) {
+    public double distanciaPuntos(Punto parametros) {
         double cat1 = x - parametros.getX();
         double cat2 = y - parametros.getX();
         double hip = Math.sqrt(cat1 * cat1 + cat2 * cat2);
